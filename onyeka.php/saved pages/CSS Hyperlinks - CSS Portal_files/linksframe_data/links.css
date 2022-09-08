@@ -1,0 +1,98 @@
+﻿#text-box {
+	float:left;
+	width:600px;
+	background-color:#FFFFFF;
+	border: 1px solid #DFDFDF;
+	padding:3px;
+	margin-bottom:15px;
+	overflow:hidden;
+}
+.button-container {
+	text-align:center;
+	float:left;
+	width:33%;
+	background-color: #FFFFFF;
+	margin-bottom:19px;
+	padding-bottom:1px;
+}
+.button-container-right {
+	text-align:center;
+	float:right;
+	width:33%;
+	background-color: #FFFFFF;
+	margin-bottom:20px;
+}
+.heading-form {font-size: 1.3em; color: #6A6557; background:#DFD5B9; margin-bottom:10px;}
+.heading-form a {color: #6A6557; text-decoration:none;}
+.heading-form a:hover {text-decoration:underline;}
+
+.example {
+	border:1px solid #CCCCCC;
+	background:#FFFFFF url('../images/code-bg.gif');
+	margin:0 5px 0 5px;
+	padding:3px 5px 3px 5px;
+}
+.code {
+	border:1px dashed #DFDFDF;
+	background:#FFFFE5;
+	font-size:0.8em;
+	font-family:"Courier New", Courier, monospace;
+}
+.code p {
+	padding:0;
+	margin:0;
+}
+
+/* ---------HYPERLINKS---------- */
+
+.l1 { text-decoration:none; }
+
+.l2 { text-decoration:none; background-color:#99CCFF; }
+
+.l3 { border: 1px dotted #99CCFF; text-decoration:none; }
+
+.l4 { color:#800000; }
+
+.l5 { text-decoration:underline overline; }
+
+.l6 { color:#993300; text-decoration:none; border-bottom: 1px dashed #993300; }
+
+.l7 { text-decoration:none; background: url(color.jpg) repeat-x bottom left; }
+
+/* ----------WITH HOVER--------- */
+
+.h1:hover { color:#800000; }
+
+.h2 { text-decoration:none; }
+.h2:hover { text-decoration:underline; }
+
+.h3:hover { background-color:#99CCFF; }
+
+.h4:hover { text-transform:uppercase; }
+
+.h5:hover { font-weight:bold; }
+
+.h6:hover { text-decoration:overline; }
+
+.h7 { color:#993300; text-decoration:none; border-bottom: 1px dashed #993300; }
+.h7:hover { border-bottom: 1px solid #993300; }
+
+.h8 { text-decoration:none; color:#0066FF; }
+.h8:hover { background: url(animated.gif) repeat-x bottom left; }
+
+.h9:hover { text-decoration:blink; }
+
+/* ---------VISITED LINKS-------- */
+
+.v1:visited { text-decoration:line-through !important; }
+
+.v2:visited { padding-right: 12px; background: url(tick.gif) no-repeat 100% 50%; }
+
+.v3:visited { color: #008080; }
+
+.v4text { color:#333333; }
+.v4:visited { cursor:text; text-decoration:none !important; color: #333333; }
+
+.v5:visited { background: url(bg.png) no-repeat; color: #333333; text-decoration:none; }
+
+.v6:visited { border-left: 1px solid #333333; border-right : 1px solid #333333; color:#333333; text-decoration:none; }

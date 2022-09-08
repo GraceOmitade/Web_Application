@@ -1,0 +1,21 @@
+﻿#demo {
+	font-size:20px;
+	text-align:center;
+	line-height:70px;
+	width: 80%;
+	margin: 1em auto 1em auto;
+	height: 70px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	border:1px solid #ccc;
+	background-color: #ffffff;
+}
+#demo:focus {
+outline:none}
+
+#demo-container {
+	background:#cccccc url(subtle_stripes.png);
+	padding:15px;
+	margin:10px 0;
+}

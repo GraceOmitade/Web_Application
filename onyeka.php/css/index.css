@@ -1,0 +1,129 @@
+.mainbody{
+	background-image:url('../images/beach 2.jpg');
+	background-size: 100%;
+
+}
+
+.panelBody{
+	padding: 15px;
+	background-color: #660066;
+	border-radius:15px;
+	width: 320px !important;
+	color: 	#000080 !important;
+	
+
+}
+
+.panelBody2{
+	padding: 15px;
+	background-color: #660066;
+	border-radius:20px;
+	/*width: 320px !important;*/
+	color: 	#ffffff !important;
+
+}
+
+.rowPad{
+	padding: 10px;
+}
+
+
+.inputCss{
+	font-size: 12pt !important;
+	text-align: right !important;
+	margin-bottom: 5px;
+
+}
+
+.resultCss{
+	font-size: 15pt !important;
+	text-align: right !important;
+	font-weight: bold !important;
+	color: #0000ff !important;
+
+}
+.heading{
+	color: #ffffff !important;
+	text-align: left;
+	font-size: 30px;
+
+}
+
+.form-wrapper{
+	width: 70%;
+	margin-left: 20%;
+}	
+
+.general-button{
+	color:#ffffff;
+	padding: 5px;
+	background: rgb(169,3,41); /* Old browsers */
+	background: -moz-linear-gradient(top, rgba(169,3,41,1) 0%, rgba(143,2,34,1) 44%, rgba(109,0,25,1) 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top, rgba(169,3,41,1) 0%,rgba(143,2,34,1) 44%,rgba(109,0,25,1) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, rgba(169,3,41,1) 0%,rgba(143,2,34,1) 44%,rgba(109,0,25,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a90329', endColorstr='#6d0019',GradientType=0 ); /* IE6-9 */
+}
+
+.general-button:hover{
+	color: #000000;
+	background: rgb(210,255,82); /* Old browsers */
+	background: -moz-linear-gradient(top, rgba(210,255,82,1) 0%, rgba(145,232,66,1) 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top, rgba(210,255,82,1) 0%,rgba(145,232,66,1) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, rgba(210,255,82,1) 0%,rgba(145,232,66,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d2ff52', endColorstr='#91e842',GradientType=0 ); /* IE6-9 */
+
+}
+
+.bg-dark{
+	background-color:#660066 !important; 
+}
+
+.name{
+	color: #ffffff;
+	margin-left: 0px;
+	font-size: 22px;
+	font-weight: bold;
+}
+
+#nav-link{
+	color:#ffffff;
+}
+
+.fade-overlay{
+	width: 60%;
+	height: 498px;
+	background-color: #DAA520;
+	position: absolute;
+	margin-top: 4%;
+	margin-left: 20%;
+	opacity: 0.3;
+}
+
+.fade-overlay2{
+	width: 100%;
+	height: 100%;
+	background-color: #000000;
+	position: absolute;
+	margkin-todp: -44.4%;
+	opacity: 0.4;
+
+}
+
+.faded-overlay h1{
+
+}
+
+.login-form{
+	background-color: rgba(218,165,32,0.6);
+	margin-top: 11%; 
+	position: absolute; 
+	margin-left: 20%;
+}
+
+.login-form input{
+	width: 650px;
+}
+
+.login-content{
+	margin-left: 32%;
+}

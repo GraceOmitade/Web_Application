@@ -1,0 +1,811 @@
+<!DOCTYPE html>
+<html class=" js flexbox flexboxlegacy canvas canvastext postmessage no-websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients no-cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers applicationcache" style=""><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<title>CSS Style Editor - CSS Portal</title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="CSS%20Style%20Editor%20-%20CSS%20Portal_files/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="CSS%20Style%20Editor%20-%20CSS%20Portal_files/font-awesome.css">
+	<!--[if (gt IE 9)|!(IE)]><!-->
+		<link rel="stylesheet" type="text/css" href="CSS%20Style%20Editor%20-%20CSS%20Portal_files/fading.css" media="screen">
+	<!--<![endif]-->
+	<link rel="stylesheet" type="text/css" href="CSS%20Style%20Editor%20-%20CSS%20Portal_files/main.css">
+	<link rel="stylesheet" type="text/css" href="CSS%20Style%20Editor%20-%20CSS%20Portal_files/css.css" id="custom_font">
+	<!--[if lte IE 8]>
+		<script type="text/javascript" src="https://www.cssportal.com/js/vendor/selectivizr.min.js"></script>
+		<script type="text/javascript" src="https://www.cssportal.com/js/vendor/respond.min.js"></script>
+	<![endif]-->
+	<link rel="shortcut icon" href="https://www.cssportal.com/favicon.ico">
+	<script src="CSS%20Style%20Editor%20-%20CSS%20Portal_files/osd.js"></script><script src="CSS%20Style%20Editor%20-%20CSS%20Portal_files/ca-pub-1356719463849900.js"></script><script async="" src="CSS%20Style%20Editor%20-%20CSS%20Portal_files/analytics.js"></script><script type="text/javascript" src="CSS%20Style%20Editor%20-%20CSS%20Portal_files/modernizr.js"></script>
+	<script src="CSS%20Style%20Editor%20-%20CSS%20Portal_files/jquery.js"></script>
+	<script type="text/javascript" src="CSS%20Style%20Editor%20-%20CSS%20Portal_files/bootstrap.js"></script>
+	<script src="CSS%20Style%20Editor%20-%20CSS%20Portal_files/jquery-ui.js"></script><link rel="stylesheet" href="CSS%20Style%20Editor%20-%20CSS%20Portal_files/jquery-ui.css" media="screen"><script type="text/javascript" src="CSS%20Style%20Editor%20-%20CSS%20Portal_files/jscolor.js"></script><script src="CSS%20Style%20Editor%20-%20CSS%20Portal_files/editor.js"></script><script src="CSS%20Style%20Editor%20-%20CSS%20Portal_files/values.js"></script>
+	<script src="CSS%20Style%20Editor%20-%20CSS%20Portal_files/google_analytics.js"></script>
+<link rel="stylesheet" type="text/css" href="CSS%20Style%20Editor%20-%20CSS%20Portal_files/prettify.css"><link rel="preload" href="CSS%20Style%20Editor%20-%20CSS%20Portal_files/integrator.js" as="script"><script type="text/javascript" src="CSS%20Style%20Editor%20-%20CSS%20Portal_files/integrator.js"></script><link rel="preload" href="CSS%20Style%20Editor%20-%20CSS%20Portal_files/integrator_002.js" as="script"><script type="text/javascript" src="CSS%20Style%20Editor%20-%20CSS%20Portal_files/integrator_002.js"></script><style type="text/css">#cssDisplay {
+  background-color: #FFFFFF;
+  color: #000000;
+}
+</style></head>
+<body class="wide">
+	<div class="layout">
+		<!-- Header -->
+		<header>
+			<!-- Header -->
+			<div class="header">
+				<div class="top-bar">
+					<div class="container">
+						<div class="row">
+							<div class="col-md-12">
+								<div class="pull-right">
+									<ul class="social-icons list-inline">
+										<li><a href="https://www.facebook.com/cssportalcom" data-toggle="tooltip" data-placement="bottom" title="" class="facebook" data-original-title="Facebook"><i class="fa fa-facebook"></i></a></li>
+										<li><a href="https://twitter.com/cssportal" data-toggle="tooltip" data-placement="bottom" title="" class="twitter" data-original-title="Twitter"><i class="fa fa-twitter"></i></a></li>
+										<li><a href="http://plus.google.com/108692995998718418927" rel="author" data-toggle="tooltip" data-placement="bottom" title="" class="google-plus" data-original-title="Google+"><i class="fa fa-google-plus"></i></a></li>
+										<li><a href="https://www.cssportal.com/donate.php" data-toggle="tooltip" data-placement="bottom" title="" class="donate" data-original-title="Donate to CSSPortal"><i class="fa fa-gift"></i></a></li>
+										<li><a href="https://www.cssportal.com/contact.php" data-toggle="tooltip" data-placement="bottom" title="" class="email" data-original-title="Contact Us"><i class="fa fa-envelope"></i></a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="container">
+					<div class="row">
+						<div class="col-md-3">
+							<!-- Logo -->
+							<div class="logo">
+								<a href="https://www.cssportal.com/"><img id="logo" src="CSS%20Style%20Editor%20-%20CSS%20Portal_files/cssportal.png" alt="CSS Portal"></a>
+								<h2 class="hide-text">CSS Portal</h2>
+							</div>
+							<!-- End Logo -->
+						</div>
+						<div class="col-sm-9">
+									<!-- Ad-728 -->
+									<div class="ad-728">
+										<div class="image">
+											<script async="" src="CSS%20Style%20Editor%20-%20CSS%20Portal_files/adsbygoogle.js"></script>
+											<!-- CSS 728x90 -->
+											<ins class="adsbygoogle" style="display:inline-block;width:728px;height:90px" data-ad-client="ca-pub-1356719463849900" data-ad-slot="7649584859" data-adsbygoogle-status="done"><ins id="aswift_0_expand" style="display:inline-table;border:none;height:90px;margin:0;padding:0;position:relative;visibility:visible;width:728px;background-color:transparent;"><ins id="aswift_0_anchor" style="display:block;border:none;height:90px;margin:0;padding:0;position:relative;visibility:visible;width:728px;background-color:transparent;"><iframe marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" allowfullscreen="true" onload="var i=this.id,s=window.google_iframe_oncopy,H=s&amp;&amp;s.handlers,h=H&amp;&amp;H[i],w=this.contentWindow,d;try{d=w.document}catch(e){}if(h&amp;&amp;d&amp;&amp;(!d.body||!d.body.firstChild)){if(h.call){setTimeout(h,0)}else if(h.match){try{h=s.upd(h,i)}catch(e){}w.location.replace(h)}}" id="aswift_0" name="aswift_0" style="left:0;position:absolute;top:0;width:728px;height:90px;" width="728" height="90" frameborder="0"></iframe></ins></ins></ins>
+											<script>
+											(adsbygoogle = window.adsbygoogle || []).push({});
+											</script>
+										</div>
+									</div>
+									<!-- End Ad-728 -->
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- End Header -->
+			<!-- Navigation -->
+			<nav id="nav" class="navigation lcyan" style="position: fixed; left: 0px; top: 0px;">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-12">
+							<ul class="menu fading l_tinynav1">
+								<li><a href="https://www.cssportal.com/">Home</a></li>
+								<li><a href="https://www.cssportal.com/blog/">CSS Blog</a></li>
+								<li><a href="#">CSS Examples</a>
+									<ul>
+										<li><a href="https://www.cssportal.com/animate-css/">CSS Animations</a></li>
+										<li><a href="https://www.cssportal.com/css-cursor-viewer/">CSS Cursor Viewer</a></li>
+										<li><a href="https://www.cssportal.com/css-image-filters/">CSS Image Filters</a></li>
+										<li><a href="https://www.cssportal.com/css3-preview/">CSS3 Preview</a></li>
+										<li><a href="https://www.cssportal.com/css3-preloaders/">CSS3 Preloaders</a></li>
+										<li><a href="https://www.cssportal.com/css3-shapes/">CSS3 Shapes</a></li>
+										<li><a href="https://www.cssportal.com/graphics/">Graphics</a></li>
+										<li><a href="https://www.cssportal.com/hyperlinks/">Hyperlinks</a></li>
+										<li><a href="https://www.cssportal.com/form-elements/">Form Elements</a></li>
+										<li><a href="https://www.cssportal.com/horizontal-menus/">Horizontal Menus</a></li>
+										<li><a href="https://www.cssportal.com/vertical-menus/">Vertical Menus</a></li>
+									</ul>
+								</li>
+								<li><a href="https://www.cssportal.com/css-generators.php">CSS Generators</a>
+									<div class="cols3">
+										<div class="col3">
+											<h4>A collection of cool CSS Generators!</h4>
+										</div>
+										<div class="col1">
+											<ul>
+												<li><a href="https://www.cssportal.com/css3-box-shadow-generator/">CSS Box Shadow Generator</a></li>
+												<li><a href="https://www.cssportal.com/css3-button-generator/">CSS Button Generator</a></li>
+												<li><a href="https://www.cssportal.com/css-gradient-generator/">CSS Gradient Generator</a></li>
+												<li><a href="https://www.cssportal.com/css3-flip-switch/">CSS Flip Switch Generator</a></li>
+												<li><a href="https://www.cssportal.com/css-image-filter-generator/">CSS Image Filter Generator</a></li>
+												<li><a href="https://www.cssportal.com/css-menu-generator/">CSS Menu Generator</a></li>
+												<li><a href="https://www.cssportal.com/css3-menu-generator/">CSS3 Menu Generator</a></li>
+												<li><a href="https://www.cssportal.com/css3-rgba-generator/">CSS RGBA Generator</a></li>
+											</ul>
+										</div>
+										<div class="col1">
+											<ul>
+												<li><a href="https://www.cssportal.com/css-ribbon-generator/">CSS Ribbon Generator</a></li>
+												<li><a href="https://www.cssportal.com/css3-rounded-corner/">CSS3 Rounded Corners</a></li>
+												<li><a href="https://www.cssportal.com/css-sprite-generator/">CSS Sprite Generator</a></li>
+												<li><a href="https://www.cssportal.com/css3-text-rotate-generator/">CSS Text Rotate Generator</a></li>
+												<li><a href="https://www.cssportal.com/css3-text-shadow-generator/">CSS Text Shadow Generator</a></li>
+												<li><a href="https://www.cssportal.com/css-tooltip-generator/">CSS Tooltip Generator</a></li>
+												<li><a href="https://www.cssportal.com/layout-generator/">Layout Generator</a></li>
+												<li><a href="https://www.cssportal.com/style-input-range/">Style Input Range</a></li>
+											</ul>
+										</div>
+									</div>
+								</li>
+								<li><a href="#">CSS Resources</a>
+									<ul>
+										<li><a href="https://www.cssportal.com/css-books/">CSS Books</a></li>
+										<li><a href="https://www.cssportal.com/css3-color-names/">CSS3 Color Names</a></li>
+										<li><a href="https://www.cssportal.com/css-hacks/">CSS Hacks</a></li>
+										<li><a href="https://www.cssportal.com/css-properties/">CSS Properties</a></li>
+										<li><a href="https://www.cssportal.com/css-quiz/">CSS Quiz</a></li>
+										<li><a href="https://www.cssportal.com/css-selectors/">CSS Selectors</a></li>
+										<li><a href="https://www.cssportal.com/software/">CSS Software</a></li>
+										<li><a href="https://www.cssportal.com/css-snippets/">CSS Snippets</a></li>
+										<li><a href="https://www.cssportal.com/css-templates/">CSS Templates</a></li>
+										<li><a href="https://www.cssportal.com/hosting-directory/">Web Hosting Directory</a></li>
+									</ul>
+								</li>
+								<li><a href="#">CSS Tools</a>
+									<ul>
+										<li class="parent"><a href="#">CSS Preprocessors<i class="fa fa-angle-right pull-right" style="margin-top: 2px;"></i></a>
+											<ul>
+												<li><a href="https://www.cssportal.com/less-to-css/">LESS to CSS Compiler</a></li>
+												<li><a href="https://www.cssportal.com/scss-to-css/">SCSS to CSS Compiler</a></li>
+												<li><a href="https://www.cssportal.com/stylus-to-css/">Stylus to CSS Compiler</a></li>
+												<li><a href="https://www.cssportal.com/css-to-less/">CSS to LESS Converter</a></li>
+												<li><a href="https://www.cssportal.com/css-to-scss/">CSS to SCSS Converter</a></li>
+												<li><a href="https://www.cssportal.com/css-to-stylus/">CSS to Stylus Converter</a></li>
+											</ul>
+										</li>
+										<li><a href="https://www.cssportal.com/css-lengths/">CSS Lengths</a></li>
+										<li><a href="https://www.cssportal.com/image-to-data/">Convert Image to Data</a></li>
+										<li><a href="https://www.cssportal.com/css-color-converter/">CSS Color Converter</a></li>
+										<li><a href="https://www.cssportal.com/css-validator/">CSS Validator</a></li>
+										<li><a href="https://www.cssportal.com/css-font-preview/">CSS Font Preview</a></li>
+										<li><a href="https://www.cssportal.com/css-sprite-generator/">CSS Sprite Generator</a></li>
+										<li><a href="https://www.cssportal.com/css-formatter/">CSS Code Formatter</a></li>
+										<li><a href="https://www.cssportal.com/css-optimize/">Optimize CSS Code</a></li>
+										<li><a href="https://www.cssportal.com/online-css-editor/">Online CSS Editor</a></li>
+										<li><a href="https://www.cssportal.com/css-style-editor/">CSS Visual Style Editor</a></li>
+									</ul>
+								</li>
+								<li><a href="#">HTML Resources</a>
+									<ul>
+										<li><a href="https://www.cssportal.com/html-books/">HTML Books</a></li>
+										<li><a href="https://www.cssportal.com/html-characters/">HTML Character Codes</a></li>
+										<li><a href="https://www.cssportal.com/html-colors/">HTML Colors</a></li>
+										<li><a href="https://www.cssportal.com/html-formatter/">HTML Formatter</a></li>
+										<li><a href="https://www.cssportal.com/html-online-editor/">HTML Online Editor</a></li>
+										<li><a href="https://www.cssportal.com/html-table-generator/">HTML Table Generator</a></li>
+										<li><a href="https://www.cssportal.com/html-tags/">HTML Tags</a></li>
+										<li><a href="https://www.cssportal.com/html-tutorial/">HTML Tutorial</a></li>
+										<li><a href="https://www.cssportal.com/html-validator/">HTML Validator</a></li>
+									</ul>								
+								</li>
+							</ul><select id="tinynav1" class="tinynav tinynav1"><option selected="selected">Go to...</option><option value="https://www.cssportal.com/">Home</option><option value="https://www.cssportal.com/blog/">CSS Blog</option><option value="#">CSS Examples</option><option value="https://www.cssportal.com/animate-css/">- CSS Animations</option><option value="https://www.cssportal.com/css-cursor-viewer/">- CSS Cursor Viewer</option><option value="https://www.cssportal.com/css-image-filters/">- CSS Image Filters</option><option value="https://www.cssportal.com/css3-preview/">- CSS3 Preview</option><option value="https://www.cssportal.com/css3-preloaders/">- CSS3 Preloaders</option><option value="https://www.cssportal.com/css3-shapes/">- CSS3 Shapes</option><option value="https://www.cssportal.com/graphics/">- Graphics</option><option value="https://www.cssportal.com/hyperlinks/">- Hyperlinks</option><option value="https://www.cssportal.com/form-elements/">- Form Elements</option><option value="https://www.cssportal.com/horizontal-menus/">- Horizontal Menus</option><option value="https://www.cssportal.com/vertical-menus/">- Vertical Menus</option><option value="https://www.cssportal.com/css-generators.php">CSS Generators</option><option value="https://www.cssportal.com/css3-box-shadow-generator/">- CSS Box Shadow Generator</option><option value="https://www.cssportal.com/css3-button-generator/">- CSS Button Generator</option><option value="https://www.cssportal.com/css-gradient-generator/">- CSS Gradient Generator</option><option value="https://www.cssportal.com/css3-flip-switch/">- CSS Flip Switch Generator</option><option value="https://www.cssportal.com/css-image-filter-generator/">- CSS Image Filter Generator</option><option value="https://www.cssportal.com/css-menu-generator/">- CSS Menu Generator</option><option value="https://www.cssportal.com/css3-menu-generator/">- CSS3 Menu Generator</option><option value="https://www.cssportal.com/css3-rgba-generator/">- CSS RGBA Generator</option><option value="https://www.cssportal.com/css-ribbon-generator/">- CSS Ribbon Generator</option><option value="https://www.cssportal.com/css3-rounded-corner/">- CSS3 Rounded Corners</option><option value="https://www.cssportal.com/css-sprite-generator/">- CSS Sprite Generator</option><option value="https://www.cssportal.com/css3-text-rotate-generator/">- CSS Text Rotate Generator</option><option value="https://www.cssportal.com/css3-text-shadow-generator/">- CSS Text Shadow Generator</option><option value="https://www.cssportal.com/css-tooltip-generator/">- CSS Tooltip Generator</option><option value="https://www.cssportal.com/layout-generator/">- Layout Generator</option><option value="https://www.cssportal.com/style-input-range/">- Style Input Range</option><option value="#">CSS Resources</option><option value="https://www.cssportal.com/css-books/">- CSS Books</option><option value="https://www.cssportal.com/css3-color-names/">- CSS3 Color Names</option><option value="https://www.cssportal.com/css-hacks/">- CSS Hacks</option><option value="https://www.cssportal.com/css-properties/">- CSS Properties</option><option value="https://www.cssportal.com/css-quiz/">- CSS Quiz</option><option value="https://www.cssportal.com/css-selectors/">- CSS Selectors</option><option value="https://www.cssportal.com/software/">- CSS Software</option><option value="https://www.cssportal.com/css-snippets/">- CSS Snippets</option><option value="https://www.cssportal.com/css-templates/">- CSS Templates</option><option value="https://www.cssportal.com/hosting-directory/">- Web Hosting Directory</option><option value="#">CSS Tools</option><option value="#">- CSS Preprocessors</option><option value="https://www.cssportal.com/less-to-css/">- - LESS to CSS Compiler</option><option value="https://www.cssportal.com/scss-to-css/">- - SCSS to CSS Compiler</option><option value="https://www.cssportal.com/stylus-to-css/">- - Stylus to CSS Compiler</option><option value="https://www.cssportal.com/css-to-less/">- - CSS to LESS Converter</option><option value="https://www.cssportal.com/css-to-scss/">- - CSS to SCSS Converter</option><option value="https://www.cssportal.com/css-to-stylus/">- - CSS to Stylus Converter</option><option value="https://www.cssportal.com/css-lengths/">- CSS Lengths</option><option value="https://www.cssportal.com/image-to-data/">- Convert Image to Data</option><option value="https://www.cssportal.com/css-color-converter/">- CSS Color Converter</option><option value="https://www.cssportal.com/css-validator/">- CSS Validator</option><option value="https://www.cssportal.com/css-font-preview/">- CSS Font Preview</option><option value="https://www.cssportal.com/css-sprite-generator/">- CSS Sprite Generator</option><option value="https://www.cssportal.com/css-formatter/">- CSS Code Formatter</option><option value="https://www.cssportal.com/css-optimize/">- Optimize CSS Code</option><option value="https://www.cssportal.com/online-css-editor/">- Online CSS Editor</option><option value="https://www.cssportal.com/css-style-editor/">- CSS Visual Style Editor</option><option value="#">HTML Resources</option><option value="https://www.cssportal.com/html-books/">- HTML Books</option><option value="https://www.cssportal.com/html-characters/">- HTML Character Codes</option><option value="https://www.cssportal.com/html-colors/">- HTML Colors</option><option value="https://www.cssportal.com/html-formatter/">- HTML Formatter</option><option value="https://www.cssportal.com/html-online-editor/">- HTML Online Editor</option><option value="https://www.cssportal.com/html-table-generator/">- HTML Table Generator</option><option value="https://www.cssportal.com/html-tags/">- HTML Tags</option><option value="https://www.cssportal.com/html-tutorial/">- HTML Tutorial</option><option value="https://www.cssportal.com/html-validator/">- HTML Validator</option></select>
+						</div>
+					</div>
+				</div>
+			</nav>
+		</header>
+		<!-- Main -->
+		<div class="main">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<!-- Content -->
+						<div class="content">
+							<!-- Single Page -->
+								<section class="page">
+									<div class="page-header">
+										<h1>CSS Style Editor</h1>
+									</div>
+									<p>CSS Style Editor, with this tool you can visually see what 
+effect a certain property has on a style. Just select any property on 
+the left hand side to 
+									see what effect it will have in the box below.&nbsp; To clear 
+the form, click on 'Start Again'</p>
+									<p>To remove properties from the code window, just move sliders to zero or drop down boxes to empty.</p>
+										<div style="text-align:center;"><hr><p>
+																	</p><div class="ad-728 hidden-xs">
+								<div class="image">
+								<script async="" src="CSS%20Style%20Editor%20-%20CSS%20Portal_files/adsbygoogle.js"></script>
+								<!-- CSS 728x90 -->
+								<ins class="adsbygoogle" style="display:inline-block;width:728px;height:90px" data-ad-client="ca-pub-1356719463849900" data-ad-slot="7649584859" data-adsbygoogle-status="done"><ins id="aswift_1_expand" style="display:inline-table;border:none;height:90px;margin:0;padding:0;position:relative;visibility:visible;width:728px;background-color:transparent;"><ins id="aswift_1_anchor" style="display:block;border:none;height:90px;margin:0;padding:0;position:relative;visibility:visible;width:728px;background-color:transparent;"><iframe marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" allowfullscreen="true" onload="var i=this.id,s=window.google_iframe_oncopy,H=s&amp;&amp;s.handlers,h=H&amp;&amp;H[i],w=this.contentWindow,d;try{d=w.document}catch(e){}if(h&amp;&amp;d&amp;&amp;(!d.body||!d.body.firstChild)){if(h.call){setTimeout(h,0)}else if(h.match){try{h=s.upd(h,i)}catch(e){}w.location.replace(h)}}" id="aswift_1" name="aswift_1" style="left:0;position:absolute;top:0;width:728px;height:90px;" width="728" height="90" frameborder="0"></iframe></ins></ins></ins>
+								<script>
+								(adsbygoogle = window.adsbygoogle || []).push({});
+								</script>
+								</div>
+							</div><p></p>
+									<hr>						
+									</div>
+
+	<div class="row">
+		<div class="col-md-6">
+		<div class="examples">
+		<div class="topic">CSS Style Options</div>
+		<div class="row">
+			<div class="col-md-6">
+				<div class="input-group"><span class="input-group-addon">Text Color</span><input class="form-control color {hash:true}" id="t-color" value="#000000" onchange="updateDisplay()" autocomplete="off" style="background-image: none; background-color: rgb(0, 0, 0); color: rgb(255, 255, 255);" type="text"></div>
+			</div>
+			<div class="col-md-6">
+				<div class="input-group"><span class="input-group-addon">Background Color</span><input class="form-control color {hash:true}" id="b-color" value="#FFFFFF" onchange="updateDisplay()" autocomplete="off" style="background-image: none; background-color: rgb(255, 255, 255); color: rgb(0, 0, 0);" type="text"></div>
+			</div>
+		</div>
+		<br>
+			<div class="panel-group" id="accordion2">
+			  <div class="panel panel-default">
+				<div class="panel-heading">
+				  <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion2" href="#collapseOne" aria-expanded="false">
+					Border Style
+				  </a>
+				</div>
+				<div id="collapseOne" class="accordion-body collapse" aria-expanded="false" style="height: 0px;">
+				  <div class="panel-body">
+					<div>
+							<p>
+								<label for="border-width">Border Width:</label>
+								<strong class="text-info"><span id="border-width">0</span>px</strong>
+							</p>
+							<div id="slider_border-width" class="slider border ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all" aria-disabled="false"><div class="ui-slider-range ui-widget-header ui-corner-all ui-slider-range-min" style="width: 0%;"></div><a class="ui-slider-handle ui-state-default ui-corner-all" href="#" style="left: 0%;"></a></div>
+							<div class="input-group"><span class="input-group-addon">Border Color</span><input class="form-control color {hash:true}" id="bc-color" value="#6D6D6D" onchange="updateDisplay()" autocomplete="off" style="background-image: none; background-color: rgb(109, 109, 109); color: rgb(255, 255, 255);" type="text"></div>
+							<br>
+							<p>
+								<label for="border-style">Border Style: </label>
+									<select class="form-control" onchange="updateDisplay()" id="border-style">
+									  <option value="solid" selected="selected">Solid</option>
+									  <option value="dashed">Dashed</option>
+									  <option value="dotted">Dotted</option>
+									  <option value="double">Double</option>
+									  <option value="groove">Groove</option>
+									  <option value="inset">Inset</option>
+									  <option value="outset">Outset</option>
+									  <option value="ridge">Ridge</option>
+									</select>
+							</p>
+						</div>
+				  </div>
+				</div>
+			  </div>
+			  <div class="panel panel-default">
+				<div class="panel-heading">
+				  <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion2" href="#collapseTwo" aria-expanded="false">
+					Paddings / Margins
+				  </a>
+				</div>
+				<div id="collapseTwo" class="accordion-body collapse" aria-expanded="false">
+				  <div class="panel-body">
+					<div>
+						<h3>Padding</h3>
+						<p>
+							<label for="padding">Padding:</label>
+							<strong class="text-info"><span id="padding">0</span>px</strong>
+						</p>
+						<div id="slider_padding" class="slider padding ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all" aria-disabled="false"><div class="ui-slider-range ui-widget-header ui-corner-all ui-slider-range-min" style="width: 0%;"></div><a class="ui-slider-handle ui-state-default ui-corner-all" href="#" style="left: 0%;"></a></div>
+						<h3>Margins</h3>
+						<p>
+							<label for="margin">Margin:</label>
+							<strong class="text-info"><span id="margin">0</span>px</strong>
+						</p>
+						<div id="slider_margin" class="slider padding ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all" aria-disabled="false"><div class="ui-slider-range ui-widget-header ui-corner-all ui-slider-range-min" style="width: 0%;"></div><a class="ui-slider-handle ui-state-default ui-corner-all" href="#" style="left: 0%;"></a></div>
+					</div>
+				  </div>
+				</div>
+			  </div>
+			  <div class="panel panel-default">
+				<div class="panel-heading">
+				  <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion2" href="#collapseThree" aria-expanded="false">
+					Font Style
+				  </a>
+				</div>
+				<div id="collapseThree" class="accordion-body collapse" aria-expanded="false">
+				  <div class="panel-body">
+					<div>
+					<p>
+						<label for="font-name">Font: </label>
+							<select class="form-control" onchange="updateDisplay()" id="font-name">
+							  <option value="" selected="selected"></option>
+							  <option value="arial">Arial</option>
+							  <option value="'arial black'">Arial Black</option>
+							  <option value="'comic sans ms'">Comic Sans MS</option>
+							  <option value="'courier new'">Courier New</option>
+							  <option value="georgia">Georgia</option>
+							  <option value="helvetica">Helvetica</option>
+							  <option value="impact">Impact</option>
+							  <option value="'times new roman'">Times New Roman</option>
+							  <option value="'trebuchet ms'">Trebuchet MS</option>
+							  <option value="verdana">Verdana</option>
+							</select>
+					</p>
+					<p>
+						<label for="font-style">Font Style: </label>
+							<select class="form-control" onchange="updateDisplay()" id="font-style">
+							  <option value="" selected="selected"></option>
+							  <option value="normal">Normal</option>
+							  <option value="italic">Italic</option>
+							  <option value="oblique">Oblique</option>
+							</select>
+					</p>
+					<p>
+						<label for="font-weight">Font Weight: </label>
+							<select class="form-control" onchange="updateDisplay()" id="font-weight">
+							  <option value="" selected="selected"></option>
+							  <option value="normal">Normal</option>
+							  <option value="bold">Bold</option>
+							  <option value="bolder">Bolder</option>
+							  <option value="lighter">Lighter</option>
+							</select>
+					</p>
+					<p>
+						<label for="font-size">Font Size:</label>
+						<strong class="text-info"><span id="font-size">0</span>px</strong>
+					</p>
+					<div id="slider_font-size" class="slider fontsize ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all" aria-disabled="false"><div class="ui-slider-range ui-widget-header ui-corner-all ui-slider-range-min" style="width: 0%;"></div><a class="ui-slider-handle ui-state-default ui-corner-all" href="#" style="left: 0%;"></a></div>
+					<p>
+						<label for="font-variant">Font Variant: </label>
+							<select class="form-control" onchange="updateDisplay()" id="font-variant">
+							  <option value="" selected="selected"></option>
+							  <option value="normal">Normal</option>
+							  <option value="small-caps">small-caps</option>
+							</select>
+					</p>
+					<p>
+						<label for="line-height">Line Height:</label>
+						<strong class="text-info"><span id="line-height">0</span>px</strong>
+					</p>
+					<div id="slider_line-height" class="slider padding ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all" aria-disabled="false"><div class="ui-slider-range ui-widget-header ui-corner-all ui-slider-range-min" style="width: 0%;"></div><a class="ui-slider-handle ui-state-default ui-corner-all" href="#" style="left: 0%;"></a></div>
+					</div>
+				  </div>
+				</div>
+			  </div>
+			  <div class="panel panel-default">
+				<div class="panel-heading">
+				  <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion2" href="#collapseFour" aria-expanded="false">
+					Text Style
+				  </a>
+				</div>
+				<div id="collapseFour" class="accordion-body collapse" aria-expanded="false">
+				  <div class="panel-body">
+					<div>
+						<p>
+							<label for="text-align">Text-Align: </label>
+								<select class="form-control" onchange="updateDisplay()" id="text-align">
+							  	  <option value="" selected="selected"></option>
+								  <option value="left">left</option>
+								  <option value="right">right</option>
+								  <option value="center">center</option>
+								  <option value="justify">justify</option>
+								</select>
+						</p>
+						<p>
+							<label for="text-decoration">Text-Decoration: </label>
+								<select class="form-control" onchange="updateDisplay()" id="text-decoration">
+							  	  <option value="" selected="selected"></option>
+								  <option value="none">none</option>
+								  <option value="underline">underline</option>
+								  <option value="overline">overline</option>
+								  <option value="underline overline">underline overline</option>
+								  <option value="line-through">line through</option>
+								  <option value="blink">blink</option>
+								</select>
+						</p>
+						<p>
+							<label for="text-indent">Text-Indent:</label>
+							<strong class="text-info"><span id="text-indent">0</span>px</strong>
+						</p>
+						<div id="slider_text-indent" class="slider fontsize ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all" aria-disabled="false"><div class="ui-slider-range ui-widget-header ui-corner-all ui-slider-range-min" style="width: 0%;"></div><a class="ui-slider-handle ui-state-default ui-corner-all" href="#" style="left: 0%;"></a></div>
+						<p>
+							<label for="letter-spacing">Letter-Spacing:</label>
+							<strong class="text-info"><span id="letter-spacing">0</span>px</strong>
+						</p>
+						<div id="slider_letter-spacing" class="slider border ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all" aria-disabled="false"><div class="ui-slider-range ui-widget-header ui-corner-all ui-slider-range-min" style="width: 0%;"></div><a class="ui-slider-handle ui-state-default ui-corner-all" href="#" style="left: 0%;"></a></div>
+						<p>
+							<label for="word-spacing">Word-Spacing:</label>
+							<strong class="text-info"><span id="word-spacing">0</span>px</strong>
+						</p>
+						<div id="slider_word-spacing" class="slider border ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all" aria-disabled="false"><div class="ui-slider-range ui-widget-header ui-corner-all ui-slider-range-min" style="width: 0%;"></div><a class="ui-slider-handle ui-state-default ui-corner-all" href="#" style="left: 0%;"></a></div>
+						<p>
+							<label for="text-transform">Text-Transform: </label>
+								<select class="form-control" onchange="updateDisplay()" id="text-transform">
+							  	  <option value="" selected="selected"></option>
+								  <option value="none">none</option>
+								  <option value="capitalize">capitalize</option>
+								  <option value="lowercase">lowercase</option>
+								  <option value="uppercase">uppercase</option>
+								</select>
+						</p>
+					</div>
+				  </div>
+				</div>
+			  </div>
+			  <div class="panel panel-default">
+				<div class="panel-heading">
+				  <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion2" href="#collapseFive" aria-expanded="false">
+					Background Style
+				  </a>
+				</div>
+				<div id="collapseFive" class="accordion-body collapse" aria-expanded="false">
+				  <div class="panel-body">
+					<div>
+						<p>
+							<label for="background-image">Background-Image: </label>
+								<select class="form-control" onchange="updateDisplay()" id="background-image">
+							  	  <option value="" selected="selected"></option>
+								  <option value="url(img1.png)">url(img1.png)</option>
+								  <option value="url(img2.png)">url(img2.png)</option>
+								</select>
+						</p>
+						<p>
+							<label for="background-repeat">Background-Repeat: </label>
+								<select class="form-control" onchange="updateDisplay()" id="background-repeat">
+							  	  <option value="" selected="selected"></option>
+								  <option value="repeat">repeat</option>
+								  <option value="repeat-x">repeat-x</option>
+								  <option value="repeat-y">repeat-y</option>
+								  <option value="no-repeat">no-repeat</option>
+								</select>
+						</p>
+						<p>
+							<label for="background-position">Background-Position: </label>
+								<select class="form-control" onchange="updateDisplay()" id="background-position">
+							  	  <option value="" selected="selected"></option>
+								  <option value="left">left</option>
+								  <option value="right">right</option>
+								  <option value="top">top</option>
+								  <option value="left top">left top</option>
+								  <option value="right bottom">right bottom</option>
+								  <option value="50% 50%">50% 50%</option>
+								</select>
+						</p>
+						<p>
+							<label for="background-attachment">Background-Attachment: </label>
+								<select class="form-control" onchange="updateDisplay()" id="background-attachment">
+							  	  <option value="" selected="selected"></option>
+								  <option value="fixed">fixed</option>
+								  <option value="scroll">scroll</option>
+								</select>
+						</p>
+					</div>
+				  </div>
+				</div>
+			  </div>
+			  <div class="panel panel-default">
+				<div class="panel-heading">
+				  <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion2" href="#collapseSix" aria-expanded="false">
+					Position Style
+				  </a>
+				</div>
+				<div id="collapseSix" class="accordion-body collapse" aria-expanded="false">
+				  <div class="panel-body">
+					<div>
+						<p>
+							<label for="position">Position: </label>
+								<select class="form-control" onchange="updateDisplay()" id="position">
+							  	  <option value="" selected="selected"></option>
+								  <option value="static">static</option>
+								  <option value="relative">relative</option>
+								  <option value="absolute">absolute</option>
+								  <option value="fixed">fixed</option>
+								</select>
+						</p>
+						<p>
+							<label for="top">Top:</label>
+							<strong class="text-info"><span id="top">0</span>px</strong>
+						</p>
+						<div id="slider_top" class="slider position ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all" aria-disabled="false"><div class="ui-slider-range ui-widget-header ui-corner-all ui-slider-range-min" style="width: 0%;"></div><a class="ui-slider-handle ui-state-default ui-corner-all" href="#" style="left: 0%;"></a></div>
+						<p>
+							<label for="left">Left:</label>
+							<strong class="text-info"><span id="left">0</span>px</strong>
+
+						</p>
+						<div id="slider_left" class="slider position ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all" aria-disabled="false"><div class="ui-slider-range ui-widget-header ui-corner-all ui-slider-range-min" style="width: 0%;"></div><a class="ui-slider-handle ui-state-default ui-corner-all" href="#" style="left: 0%;"></a></div>
+						<p>
+							<label for="right">Right:</label>
+							<strong class="text-info"><span id="right">0</span>px</strong>
+						</p>
+						<div id="slider_right" class="slider position ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all" aria-disabled="false"><div class="ui-slider-range ui-widget-header ui-corner-all ui-slider-range-min" style="width: 0%;"></div><a class="ui-slider-handle ui-state-default ui-corner-all" href="#" style="left: 0%;"></a></div>
+						<p>
+							<label for="bottom">Bottom:</label>
+							<strong class="text-info"><span id="bottom">0</span>px</strong>
+						</p>
+						<div id="slider_bottom" class="slider position ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all" aria-disabled="false"><div class="ui-slider-range ui-widget-header ui-corner-all ui-slider-range-min" style="width: 0%;"></div><a class="ui-slider-handle ui-state-default ui-corner-all" href="#" style="left: 0%;"></a></div>
+					</div>
+				  </div>
+				</div>
+			  </div>
+			  <div class="panel panel-default">
+				<div class="panel-heading">
+				  <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion2" href="#collapseSeven" aria-expanded="false">
+					Extras
+				  </a>
+				</div>
+				<div id="collapseSeven" class="accordion-body collapse" aria-expanded="false">
+				  <div class="panel-body">
+					<div>
+						<p>
+							<label for="cursor">Cursor: </label>
+								<select class="form-control" onchange="updateDisplay()" id="cursor">
+							  	  <option value="" selected="selected"></option>
+								  <option value="crosshair">crosshair</option>
+								  <option value="default">default</option>
+								  <option value="pointer">pointer</option>
+								  <option value="move">move</option>
+								  <option value="text">text</option>
+								  <option value="wait">wait</option>
+								  <option value="help">help</option>
+								  <option value="n-resize">n-resize</option>
+								  <option value="s-resize">s-resize</option>
+								  <option value="w-resize">w-resize</option>
+								  <option value="e-resize">e-resize</option>
+								  <option value="ne-resize">ne-resize</option>
+								  <option value="nw-resize">nw-resize</option>
+								  <option value="se-resize">se-resize</option>
+								  <option value="sw-resize">sw-resize</option>
+								</select>
+						</p>
+						<p>
+							<label for="visibility">Visibility: </label>
+								<select class="form-control" onchange="updateDisplay()" id="visibility">
+							  	  <option value="" selected="selected"></option>
+								  <option value="visible">visible</option>
+								  <option value="hidden">hidden</option>
+								</select>
+						</p>
+						<p>
+							<label for="overflow">Overflow: </label>
+								<select class="form-control" onchange="updateDisplay()" id="overflow">
+							  	  <option value="" selected="selected"></option>
+								  <option value="visible">visible</option>
+								  <option value="hidden">hidden</option>
+								  <option value="scroll">scroll</option>
+								  <option value="auto">auto</option>
+								</select>
+						</p>
+						<p>
+							<label for="float">Float: </label>
+								<select class="form-control" onchange="updateDisplay()" id="float">
+							  	  <option value="" selected="selected"></option>
+								  <option value="left">left</option>
+								  <option value="right">right</option>
+								  <option value="none">none</option>
+								</select>
+						</p>
+					</div>
+				  </div>
+				</div>
+			  </div>
+			  <div class="panel panel-default">
+				<div class="panel-heading">
+				  <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion2" href="#collapseEight" aria-expanded="false">
+					CSS3 Styles
+				  </a>
+				</div>
+				<div id="collapseEight" class="accordion-body collapse" aria-expanded="false">
+				  <div class="panel-body">
+					<div>
+						<h3>Border Radius</h3>
+						<p>
+							<label for="border-radius">Width:</label>
+							<strong class="text-info"><span id="border-radius">0</span>px</strong>
+						</p>
+						<div id="slider_border-radius" class="slider padding ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all" aria-disabled="false"><div class="ui-slider-range ui-widget-header ui-corner-all ui-slider-range-min" style="width: 0%;"></div><a class="ui-slider-handle ui-state-default ui-corner-all" href="#" style="left: 0%;"></a></div>
+						<h3>Text Shadow</h3>
+						<p>
+							<label for="text-h-length">Horizontal Length:</label>
+							<strong class="text-info"><span id="text-h-length">0</span>px</strong>
+						</p>
+						<div id="slider_text-h-length" class="slider border ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all" aria-disabled="false"><div class="ui-slider-range ui-widget-header ui-corner-all ui-slider-range-min" style="width: 0%;"></div><a class="ui-slider-handle ui-state-default ui-corner-all" href="#" style="left: 0%;"></a></div>
+						<p>
+							<label for="text-v-length">Vertical Length:</label>
+							<strong class="text-info"><span id="text-v-length">0</span>px</strong>
+						</p>
+						<div id="slider_text-v-length" class="slider border ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all" aria-disabled="false"><div class="ui-slider-range ui-widget-header ui-corner-all ui-slider-range-min" style="width: 0%;"></div><a class="ui-slider-handle ui-state-default ui-corner-all" href="#" style="left: 0%;"></a></div>
+						<p>
+							<label for="text-b-length">Blur:</label>
+							<strong class="text-info"><span id="text-b-length">0</span>px</strong>
+						</p>
+						<div id="slider_text-b-length" class="slider border ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all" aria-disabled="false"><div class="ui-slider-range ui-widget-header ui-corner-all ui-slider-range-min" style="width: 0%;"></div><a class="ui-slider-handle ui-state-default ui-corner-all" href="#" style="left: 0%;"></a></div>
+						
+						<div class="input-group"><span class="input-group-addon">Shadow Color</span><input class="form-control color {pickerPosition:'top',hash:true}" id="text-s-color" value="#800000" onchange="updateDisplay()" autocomplete="off" style="background-image: none; background-color: rgb(128, 0, 0); color: rgb(255, 255, 255);" type="text"></div>
+						<br>
+						<h3>Box Shadow</h3>
+						<p>
+							<label for="box-h-length">Horizontal Length:</label>
+							<strong class="text-info"><span id="box-h-length">0</span>px</strong>
+						</p>
+						<div id="slider_box-h-length" class="slider border ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all" aria-disabled="false"><div class="ui-slider-range ui-widget-header ui-corner-all ui-slider-range-min" style="width: 0%;"></div><a class="ui-slider-handle ui-state-default ui-corner-all" href="#" style="left: 0%;"></a></div>
+						<p>
+							<label for="box-v-length">Vertical Length:</label>
+							<strong class="text-info"><span id="box-v-length">0</span>px</strong>
+						</p>
+						<div id="slider_box-v-length" class="slider border ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all" aria-disabled="false"><div class="ui-slider-range ui-widget-header ui-corner-all ui-slider-range-min" style="width: 0%;"></div><a class="ui-slider-handle ui-state-default ui-corner-all" href="#" style="left: 0%;"></a></div>
+						<p>
+							<label for="box-b-length">Blur Radius:</label>
+							<strong class="text-info"><span id="box-b-length">0</span>px</strong>
+						</p>
+						<div id="slider_box-b-length" class="slider border ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all" aria-disabled="false"><div class="ui-slider-range ui-widget-header ui-corner-all ui-slider-range-min" style="width: 0%;"></div><a class="ui-slider-handle ui-state-default ui-corner-all" href="#" style="left: 0%;"></a></div>
+						<div class="input-group"><span class="input-group-addon">Shadow Color</span><input class="form-control color {pickerPosition:'top',hash:true}" id="box-s-color" value="#800000" onchange="updateDisplay()" autocomplete="off" style="background-image: none; background-color: rgb(128, 0, 0); color: rgb(255, 255, 255);" type="text"></div>
+					</div>
+				  </div>
+				</div>
+			  </div>
+			</div>
+		</div>
+		</div>
+		
+		<div class="col-md-6">
+			<div class="examples">
+			<div class="topic">CSS Style Preview</div>
+				<div>
+					<div style="background-image:url('js/grid.gif'); padding:20px; margin:20px;">
+						<div id="cssDisplay">
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur
+ aliquam rutrum quam, non varius magna molestie vel. Sed aliquam 
+vulputate ligula, non tincidunt sem euismod at. Quisque dictum, sapien 
+pulvinar gravida tincidunt, odio lacus consequat mauris, quis imperdiet 
+metus quam sed velit.
+						</div>
+					</div>
+				</div>
+			</div>
+				
+<div class="examples">
+<div class="topic">CSS Code</div>				
+<pre id="outputcss" class="prettyprint lang-css prettyprinted" style="margin: 20px;">#cssDisplay {
+  background-color: #FFFFFF;
+  color: #000000;
+}
+</pre>			
+			<input style="margin-left:20px;" class="btn btn-primary" value="Start Again" onclick="history.go()" type="reset">
+			</div>
+</div>
+		</div>
+
+
+
+
+<div class="clear"></div>
+						
+						        <hr class="fadeout">
+						        <div style="text-align:center;">
+	<ul class="social-icons-blog list-inline">
+		<li><a href="https://www.facebook.com/sharer/sharer.php?u=https://www.cssportal.com/css-style-editor/" class="facebook"><i class="fa fa-facebook"></i>  Share on Facebook</a></li>
+		<li><a href="https://twitter.com/intent/tweet?text=CSS%20Style%20Editor&amp;url=https://www.cssportal.com/css-style-editor/&amp;via=cssportal" class="twitter"><i class="fa fa-twitter"></i>  Share on Twitter</a></li>
+		<li><a href="https://plus.google.com/share?url=https://www.cssportal.com/css-style-editor/" class="google-plus"><i class="fa fa-google-plus"></i>  Share on Google+</a></li>
+	</ul>
+</div>
+<br>
+
+								<div style="text-align:center;">
+																<div class="ad-728 hidden-xs">
+								<div class="image">
+								<script async="" src="CSS%20Style%20Editor%20-%20CSS%20Portal_files/adsbygoogle.js"></script>
+								<!-- CSS 728x90 -->
+								<ins class="adsbygoogle" style="display:inline-block;width:728px;height:90px" data-ad-client="ca-pub-1356719463849900" data-ad-slot="7649584859" data-adsbygoogle-status="done"><ins id="aswift_2_expand" style="display:inline-table;border:none;height:90px;margin:0;padding:0;position:relative;visibility:visible;width:728px;background-color:transparent;"><ins id="aswift_2_anchor" style="display:block;border:none;height:90px;margin:0;padding:0;position:relative;visibility:visible;width:728px;background-color:transparent;"><iframe marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" allowfullscreen="true" onload="var i=this.id,s=window.google_iframe_oncopy,H=s&amp;&amp;s.handlers,h=H&amp;&amp;H[i],w=this.contentWindow,d;try{d=w.document}catch(e){}if(h&amp;&amp;d&amp;&amp;(!d.body||!d.body.firstChild)){if(h.call){setTimeout(h,0)}else if(h.match){try{h=s.upd(h,i)}catch(e){}w.location.replace(h)}}" id="aswift_2" name="aswift_2" style="left:0;position:absolute;top:0;width:728px;height:90px;" width="728" height="90" frameborder="0"></iframe></ins></ins></ins>
+								<script>
+								(adsbygoogle = window.adsbygoogle || []).push({});
+								</script>
+								</div>
+							</div>								</div>
+								</section>
+								<!-- End Single Page -->
+						</div>
+						<!-- End Content -->
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- End Main -->
+<script>
+$(window).on('load', function() {
+    updateDisplay()
+})
+</script>
+		<div class="ticker">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<div id="ticker" class="tweet">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- End Ticker -->
+		<!-- Footer -->
+		<footer>
+			<!-- Footer Block -->
+			<div class="footer">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-3">
+							<!-- Logo -->
+							<div class="logo">
+								<a href="https://www.cssportal.com/"><img id="logo-footer" src="CSS%20Style%20Editor%20-%20CSS%20Portal_files/cssportal.png" alt="CSS Portal"></a>
+							</div>
+							<!-- End Logo -->
+						</div>
+						<div class="col-md-3">
+							<!-- Menus -->
+							<h3>Friends</h3>
+							<ul class="menu-footer list-unstyled">
+								<li><a href="https://www.expandurl.net/"><i class="fa fa-angle-double-right"></i> Expand URL</a></li>
+								<li><a href="https://www.ewhois.co/"><i class="fa fa-angle-double-right"></i> Whois Search</a></li>
+							</ul>
+							<!-- End Menus -->
+						</div>
+						<div class="col-md-3">
+							<!-- Menus -->
+							<h3>&nbsp;</h3>
+							<ul class="menu-footer list-unstyled">
+								<li><a href="https://www.cssportal.com/donate.php"><i class="fa fa-angle-double-right"></i> Donate to CSSPortal</a></li>
+								<li><a href="https://www.cssportal.com/layout-generator/"><i class="fa fa-angle-double-right"></i> CSS Layout Generator</a></li>
+								<li><a href="https://www.cssportal.com/css-validator/"><i class="fa fa-angle-double-right"></i> CSS Validator</a></li>
+								<li><a href="https://www.cssportal.com/blog/"><i class="fa fa-angle-double-right"></i> CSS Blog</a></li>
+								<li><a href="https://www.cssportal.com/hosting-directory/"><i class="fa fa-angle-double-right"></i> Web Hosting Directory</a></li>
+							</ul>
+							<!-- End Menus -->
+						</div>
+						<div class="col-md-3">
+							<!-- About us -->
+							<h3>About Us</h3>
+							<p>CSS Portal is home to many examples of CSS and how it can be 
+used in website design. Here you'll find all CSS properties and many CSS
+ generators to help with all you design needs.</p>
+							<!-- End About us -->
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- End Footer Block -->
+			<!-- Copyright -->
+			<div class="copyright">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-5">
+							<p>Copyright © 2018 CSSPortal.</p>
+						</div>
+						<div class="col-md-7">
+							<!-- Footer Menu -->
+							<ul class="list-unstyled">
+								<li><a href="https://www.cssportal.com/css-properties/">CSS Properties</a></li>
+								<li><a href="https://www.cssportal.com/css-templates/">Free CSS Templates</a></li>
+								<li><a href="https://www.cssportal.com/contact.php">Contact Us</a></li>
+								<li><a href="https://www.cssportal.com/privacy.php">Privacy Policy</a></li>
+							</ul>
+							<!-- End Footer Menu -->
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- End Copyright -->
+		</footer>
+		<!-- End Footer -->
+	</div>
+
+	<a href="#" class="scroll-top" style="display: inline;"><i class="fa fa-chevron-up"></i></a>
+	
+	
+	<!--[if lte IE 9]>
+		<script type="text/javascript" src="https://www.cssportal.com/js/vendor/jquery.placeholder.min.js"></script>
+		<script type="text/javascript" src="https://www.cssportal.com/js/vendor/jquery.menu.min.js"></script>
+		<script type="text/javascript">
+			/* <![CDATA[ */
+			jQuery.noConflict();
+
+			(function ($) {
+				$(function () {
+					// Menu effect
+					$('#nav .menu').menu({'effect' : 'fade'});
+				});
+			})(jQuery);
+			/* ]]> */
+		</script>
+	<![endif]-->
+	<script type="text/javascript" src="CSS%20Style%20Editor%20-%20CSS%20Portal_files/plugins.js"></script>
+	<script type="text/javascript" src="CSS%20Style%20Editor%20-%20CSS%20Portal_files/main.js"></script>
+
+
+<iframe id="google_osd_static_frame_739724414371" name="google_osd_static_frame" style="display: none; width: 0px; height: 0px;"></iframe></body></html>

@@ -1,0 +1,19 @@
+﻿#demo {
+	font-size:20px;
+	text-align:center;
+	line-height:70px;
+	width: 80%;
+	margin: 1em auto 1em auto;
+	height: 70px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	border:1px solid #ccc;
+	box-shadow: 2px 2px 2px #bbb;
+	-webkit-box-shadow: 2px 2px 2px #bbb;
+	-moz-box-shadow: 2px 2px 2px #bbb;
+	background-color: #ffffff;
+}
+
+#demo:focus {
+outline:none}

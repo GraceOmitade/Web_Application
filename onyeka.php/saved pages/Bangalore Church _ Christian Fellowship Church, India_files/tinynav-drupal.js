@@ -1,0 +1,3 @@
+(function($){Drupal.behaviors.tinynav={attach:function(context,settings){settings.tinynav=settings.tinynav||{selector:'#zone-menu .region-menu ul.menu',media_query:'all and (max-width:780px)',header:false,active:'active-trail'}
+$(settings.tinynav.selector).addClass('tinyjs');var tinyNavSettings={header:settings.tinynav.header};if(settings.tinynav.active){tinyNavSettings.active=settings.tinynav.active;}
+$('.tinyjs').tinyNav(tinyNavSettings);$('select.tinynav').wrap('<div class="tinynav-wrapper"/>');},weight:99};})(jQuery);
